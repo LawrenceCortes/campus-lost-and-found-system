@@ -1,0 +1,109 @@
+:root {
+  --primary: rgb(184, 120, 47);
+  --secondary: #f3fff7;
+  --text: #333;
+  --white: #fff;
+  --accent: #d8f5e5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--text);
+  background-image: url('background.jfif');
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 16px;
+  text-align: center;
+}
+
+header h1 {
+  text-align: left;
+  margin: 0 0 16px 0;
+}
+
+nav {
+  background: var(--primary);
+  padding: 16px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: rgb(150, 90, 20);
+}
+
+section {
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+footer {
+  background: var(--primary);
+  color: var(--white);
+  padding: 16px;
+  text-align: center;
+  font-size: 0.9rem;
+}
